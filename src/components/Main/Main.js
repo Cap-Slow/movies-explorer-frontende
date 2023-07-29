@@ -10,11 +10,13 @@ import Footer from '../Footer/Footer';
 function Main() {
   return (
     <section className="main">
-      <Header>
-        <div className="header__nav-container">
+      <Header isLoggedIn={false}>
+        <nav className="header__nav-container">
           <a className="header__link">Регистрация</a>
-          <button className="header__button">Войти</button>
-        </div>
+          <button className="header__register-button header__button">
+            Войти
+          </button>
+        </nav>
       </Header>
       <Promo />
       <NavTab />
