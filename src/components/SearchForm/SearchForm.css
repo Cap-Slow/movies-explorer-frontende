@@ -2,6 +2,7 @@
   max-width: 1140px;
   margin: 0 auto;
   padding: 70px 0 69px 0;
+  border-bottom: 1px solid #e8e8e8;
 }
 
 .search-form__form {
