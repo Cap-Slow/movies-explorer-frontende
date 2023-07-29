@@ -60,7 +60,7 @@
   line-height: 9px;
 }
 
-.movies-card__remove-button {
+.movies-card__saved-icon {
   position: absolute;
   top: 14px;
   right: 14px;
@@ -69,7 +69,25 @@
   border: none;
   background: none;
   cursor: pointer;
-  background-image: url('../../images/remove-saved-movie-button.svg');
+  background-image: url('../../images/saved-icon.svg');
   background-repeat: no-repeat;
+}
 
+.movies-card__delete-icon {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 21px;
+  height: 21px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  background-image: url('../../images/remove-saved-button.svg');
+  background-repeat: no-repeat;
+}
+
+.movies-card__button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.5s ease;
 }
