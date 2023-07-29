@@ -61,37 +61,3 @@
   font-weight: 500;
   line-height: 18px;
 }
-
-.search-form__checkbox-container {
-  display: flex;
-}
-
-.search-form__checkbox {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-}
-
-.search-form__checkbox:checked+.search__form-visible-checkbox {
-  background-image: url(../../images/switch-on.svg);
-}
-
-.search-form__checkbox+.search__form-visible-checkbox {
-  background-image: url(../../images/switch-off.svg);
-}
-
-.search__form-visible-checkbox {
-  display: inline-block;
-  vertical-align: middle;
-  width: 36px;
-  height: 20px;
-}
-
-.search-form__label-text {
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 18px;
-  margin: 1px 30px 0 14px;
-}

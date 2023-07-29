@@ -1,4 +1,5 @@
 import serachIconPath from '../../images/search.svg';
+import FilterCheckbox from '../FIlterCheckbox/FilterCheckbox';
 
 function SearchForm() {
   return (
@@ -19,17 +20,8 @@ function SearchForm() {
         <button className="search-form__sumbit-button" type="submit">
           Найти
         </button>
-        <div class="search__form-divider"></div>
-        <label className="search-form__checkbox-container">
-          <input
-            className="search-form__checkbox"
-            type="checkbox"
-            id="short-films"
-            name="short-films"
-          />
-          <span class="search__form-visible-checkbox"></span>
-          <span class="search-form__label-text">Короткометражки</span>
-        </label>
+        <div className="search__form-divider"></div>
+        <FilterCheckbox></FilterCheckbox>
       </form>
     </section>
   );
