@@ -1,4 +1,4 @@
-function MoviesCard({ title, duration, imageLink, isSaved }) {
+function MoviesCard({ title, duration, imageLink, children }) {
   return (
     <div className="movies-card">
       <img className="movies-card__image" src={imageLink} alt="Постер фильма" />
@@ -8,11 +8,7 @@ function MoviesCard({ title, duration, imageLink, isSaved }) {
           <p className="movies-card__duration-text">{duration}</p>
         </div>
       </div>
-      {isSaved ? (
-        <button className="movies-card__remove-button"></button>
-      ) : (
-        <button className="movies-card__save-button">Сохранить</button>
-      )}
+      {children}
     </div>
   );
 }
