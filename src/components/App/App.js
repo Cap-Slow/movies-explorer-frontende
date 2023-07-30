@@ -5,6 +5,7 @@ import SavedMovies from '../SavedMovies/SavedMovies';
 import Profile from '../Profile/Profile';
 import NotFoundPage from '../NotFoundPage/NotFoundPage';
 import Register from '../Register/Register';
+import Login from '../Login/Login';
 import { Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -47,6 +48,14 @@ function App() {
         element={
           <div className="page">
             <Register></Register>
+          </div>
+        }
+      />
+      <Route
+        path="/signin"
+        element={
+          <div className="page">
+            <Login></Login>
           </div>
         }
       />
