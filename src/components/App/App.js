@@ -3,6 +3,8 @@ import Main from '../Main/Main';
 import Movies from '../Movies/Movies';
 import SavedMovies from '../SavedMovies/SavedMovies';
 import Profile from '../Profile/Profile';
+import NotFoundPage from '../NotFoundPage/NotFoundPage';
+import Register from '../Register/Register';
 import { Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -37,6 +39,22 @@ function App() {
         element={
           <div className="page">
             <Profile></Profile>
+          </div>
+        }
+      />
+      <Route
+        path="/signup"
+        element={
+          <div className="page">
+            <Register></Register>
+          </div>
+        }
+      />
+      <Route
+        path="*"
+        element={
+          <div className="page">
+            <NotFoundPage></NotFoundPage>
           </div>
         }
       />
