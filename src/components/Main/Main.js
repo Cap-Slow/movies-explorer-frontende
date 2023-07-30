@@ -9,7 +9,7 @@ import Footer from '../Footer/Footer';
 
 function Main() {
   return (
-    <section className="main">
+    <main className="main">
       <Header isLoggedIn={false}>
         <nav className="header__nav-container">
           <a className="header__link">Регистрация</a>
@@ -25,7 +25,7 @@ function Main() {
       <AboutMe />
       <Portfolio />
       <Footer />
-    </section>
+    </main>
   );
 }
 
