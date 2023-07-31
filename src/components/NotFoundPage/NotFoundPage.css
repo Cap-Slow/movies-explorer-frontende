@@ -8,7 +8,7 @@
 }
 
 .not-found-page__title {
-  margin: 5px 0 0 0;
+  margin: 9px 0 0 0;
   font-size: 140px;
   font-weight: 400;
   text-align: center;
@@ -23,7 +23,7 @@
 
 .not-found-page__back-button {
   position: absolute;
-  bottom: 8.2%;
+  bottom: 8%;
   left: 47.9%;
   font-size: 14px;
   font-weight: 400;
