@@ -54,6 +54,7 @@
   padding-top: 10px;
   font-weight: 400;
   margin: 0;
+  line-height: normal;
 }
 
 .timeline-text_theme_black {
@@ -68,5 +69,32 @@
 .about-project__timeline-text_type_gray {
   font-weight: 500;
   color: #a0a0a0;
-  padding-top: 15px;
+  padding-top: 14px;
+  line-height: 17px;
+}
+
+@media screen and (max-width: 1023px) {
+  .about-project__description {
+    max-width: 668px;
+    padding: 71px 0 23px 0;
+  }
+
+  .about-project__description-text {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .about-project__description-title {
+    margin: 0 0 23px 0;
+  }
+
+  .about-project__description-container:last-child {
+    margin-left: 30px;
+  }
+
+  .about-project__timeline {
+    width: 668px;
+    grid-template-columns: 4fr 15fr;
+    margin: 70px auto 87px;
+  }
 }

@@ -9,7 +9,6 @@
 }
 
 .techs__title {
-  left: 25%;
   max-width: 730px;
   text-align: center;
   font-size: 50px;
@@ -56,4 +55,30 @@
   font-weight: 400;
   letter-spacing: -0.56px;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 1023px) {
+  .techs__title {
+    margin: 80px auto 22px;
+  }
+
+  .techs__subtitle {
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: -0.48px;
+  }
+
+  .techs__list {
+    margin: 84px auto 89px;
+  }
+
+  .techs__list-item {
+    width: 84px;
+    height: 57px;
+  }
+
+  .techs__list-item-text {
+    font-size: 12px;
+    letter-spacing: -0.48px;
+  }
 }

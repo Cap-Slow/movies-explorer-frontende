@@ -48,11 +48,31 @@
   align-self: center;
   width: 18px;
   height: 17px;
-  margin: 6px 6px 0 0;
+  margin: 6px 5px 0 0;
 }
 
 .portfolio__link-button:hover {
   cursor: pointer;
   opacity: 0.8;
   transition: opacity 0.5s ease;
+}
+
+@media screen and (max-width: 1023px) {
+
+  .portfolio {
+    max-width: 668px;
+  }
+
+  .portfolio__link-text {
+    font-size: 28px;
+    letter-spacing: -1.12px;
+  }
+
+  .portfolio__title {
+    margin: 0 0 49px 0;
+  }
+
+  .portfolio__links {
+    padding-bottom: 70px;
+  }
 }

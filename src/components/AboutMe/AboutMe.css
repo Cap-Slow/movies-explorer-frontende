@@ -60,3 +60,39 @@
   height: 327px;
   border-radius: 10px;
 }
+
+@media screen and (max-width: 1023px) {
+
+  .about-me {
+    padding-top: 2px;
+    max-width: 668px;
+    margin: 0 auto;
+  }
+
+  .about-me__name {
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -1.6px;
+  }
+
+  .about-me__profession {
+    font-size: 12px;
+    line-height: 18px;
+    margin: 16px 0 20px 0;
+  }
+
+  .about-me__description {
+    max-width: 368px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .about-me__photo {
+    width: 255px;
+    height: 307px;
+  }
+
+  .about-me__link {
+    margin: 88px 0 92px;
+  }
+}

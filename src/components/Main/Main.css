@@ -16,3 +16,16 @@
 .main__section-title_section_techs {
   padding: 96px 0 23px 0;
 }
+
+
+@media screen and (max-width: 1023px) {
+  .main__section-title {
+    max-width: 768px;
+    padding: 90px 0 23px 0;
+
+  }
+
+  .main__section-title {
+    max-width: 668px;
+  }
+}
