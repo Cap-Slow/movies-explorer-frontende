@@ -10,7 +10,7 @@ function Header({ children, isLoggedIn }) {
           onClick={() => navigate('/')}
           src={logoPath}
           alt="Логотип дипломного проекта"
-          className="header__logo header__link"
+          className="header__logo header__button"
         />
         {children}
       </div>
