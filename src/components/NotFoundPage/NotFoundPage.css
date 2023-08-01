@@ -8,11 +8,10 @@
 }
 
 .not-found-page__title {
-  margin: 9px 0 0 0;
+  margin: 5px 0 0 0;
   font-size: 140px;
   font-weight: 400;
   text-align: center;
-
 }
 
 .not-found-page__text {
@@ -23,7 +22,7 @@
 
 .not-found-page__back-button {
   position: absolute;
-  bottom: 8%;
+  bottom: 8.5%;
   left: 47.9%;
   font-size: 14px;
   font-weight: 400;
@@ -37,4 +36,11 @@
   opacity: 0.7;
   transition: opacity 0.5s ease;
   transition: text-shadow 0.5s ease;
+}
+
+@media screen and (max-width: 1023px) {
+  .not-found-page__back-button {
+    bottom: 21.6%;
+    left: 46.5%;
+  }
 }
