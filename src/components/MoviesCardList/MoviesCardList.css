@@ -32,3 +32,19 @@
   opacity: 0.8;
   transition: opacity 0.5s ease;
 }
+
+
+@media screen and (max-width: 1023px) {
+  .movies-card-list {
+    max-width: 708px;
+  }
+
+  .movies-card-list__list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 45px 30px;
+  }
+
+  .movies-card-list__load-button {
+    margin: 61px auto 51px;
+  }
+}
