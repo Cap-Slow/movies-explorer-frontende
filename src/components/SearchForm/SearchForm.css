@@ -61,3 +61,18 @@
   font-weight: 500;
   line-height: 18px;
 }
+
+@media screen and (max-width: 1023px) {
+  .search-form {
+    max-width: 708px;
+    padding: 80px 0 109px 0;
+  }
+
+  .search__form-divider {
+    margin: 0 20px 0 20px;
+  }
+
+  .search-form__sumbit-button {
+    width: 90px;
+  }
+}
