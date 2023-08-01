@@ -1,3 +1,9 @@
 .saved-movies__blank-area {
   margin: 212px;
 }
+
+@media screen and (max-width: 1023px) {
+  .saved-movies__blank-area {
+    margin: 147px;
+  }
+}
