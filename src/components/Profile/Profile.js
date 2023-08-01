@@ -1,19 +1,11 @@
 import Header from '../Header/Header';
+import Navigation from '../Navigation/Navigation';
 
 function Profile() {
   return (
     <section className="profile">
       <Header isLoggedIn={true}>
-        <div className="header__nav-container">
-          <a className="header__link header__link_font_medium">Фильмы</a>
-          <a className="header__link header__link_font_regular header__link_margin_low">
-            Сохранённые фильмы
-          </a>
-          <a className="header__link header__link_font-size_regular header__link_margin_medium">
-            Аккаунт
-          </a>
-          <button className="header__account-button header__button"></button>
-        </div>
+        <Navigation />
       </Header>
       <div className="profile__container">
         <h2 className="profile__title">Привет, Дмитрий!</h2>
