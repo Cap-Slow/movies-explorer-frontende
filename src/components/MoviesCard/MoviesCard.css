@@ -26,6 +26,10 @@
   font-weight: 500;
   margin: 0;
   padding-top: 1px;
+  max-width: 250px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .movies-card__duration-container {
@@ -91,4 +95,16 @@
   cursor: pointer;
   opacity: 0.8;
   transition: opacity 0.5s ease;
+}
+
+@media screen and (max-width: 1023px) {
+  .movies-card__image {
+    min-height: 190px;
+    margin-bottom: 25px;
+  }
+
+  .movies-card__description {
+    width: 100%;
+  }
+
 }
