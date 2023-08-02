@@ -1,5 +1,6 @@
 import Header from '../Header/Header';
 import Navigation from '../Navigation/Navigation';
+import SliderMenu from '../SliderMenu/SliderMenu';
 import SearchForm from '../SearchForm/SearchForm';
 import Preloader from '../Preloader/Preloader';
 import MoviesCardList from '../MoviesCardList/MoviesCardList';
@@ -23,6 +24,7 @@ function Movies() {
     <section className="movies">
       <Header isLoggedIn={true}>
         <Navigation />
+        <SliderMenu />
       </Header>
       <SearchForm />
       {/* <Preloader /> */}
