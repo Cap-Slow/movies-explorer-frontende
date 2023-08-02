@@ -41,7 +41,6 @@
   display: flex;
   margin-top: 160px;
   flex-direction: column;
-  justify-content: center;
 }
 
 .slider-menu__account-section {
