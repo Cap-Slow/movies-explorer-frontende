@@ -24,8 +24,13 @@
   align-items: center;
 }
 
+.footer__links {
+  display: flex;
+  margin: 0;
+}
+
 .footer__link {
-  margin-left: 21px;
+  margin: 0 0 0 21px;
   text-decoration: none;
   color: #000;
 }
@@ -41,5 +46,33 @@
 @media screen and (max-width: 1023px) {
   .footer {
     max-width: 708px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer {
+    max-width: 300px;
+    padding-top: 41px;
+  }
+
+  .footer__container {
+    flex-direction: column-reverse;
+  }
+
+  .footer__links {
+    flex-direction: column;
+    margin: 32px 0 11px;
+  }
+
+  .footer__link {
+    margin: 0 2px 0 0;
+  }
+
+  .footer__link:first-of-type {
+    margin: 0 0 14px 0;
+  }
+
+  .footer__text {
+    font-size: 12px;
   }
 }

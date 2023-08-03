@@ -20,12 +20,22 @@
 
 @media screen and (max-width: 1023px) {
   .main__section-title {
-    max-width: 768px;
-    padding: 90px 0 23px 0;
-
-  }
-
-  .main__section-title {
     max-width: 668px;
+    padding: 90px 0 23px 0;
   }
+}
+
+@media screen and (max-width: 767px) {
+  .main__section-title {
+    font-size: 18px;
+    letter-spacing: -0.72px;
+    max-width: 284px;
+    padding: 70px 0 28px 0;
+  }
+
+  .main__section-title_section_student {
+    padding: 80px 0 27px 0;
+    max-width: 292px;
+  }
+
 }

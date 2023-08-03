@@ -82,3 +82,35 @@
     letter-spacing: -0.48px;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .techs {
+    background: #fff;
+  }
+
+  .techs__title {
+    font-size: 30px;
+    letter-spacing: -1.2px;
+    margin: 49px auto 13px;
+  }
+
+  .techs__subtitle {
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: -0.44px;
+    max-width: 292px;
+  }
+
+  .techs__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px auto;
+    justify-content: space-between;
+    max-width: 178px;
+  }
+
+  .techs__list-item {
+    margin: 0 0 10px 0;
+  }
+
+}
