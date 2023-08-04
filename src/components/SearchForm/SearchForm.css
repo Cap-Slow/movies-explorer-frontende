@@ -6,7 +6,6 @@
 }
 
 .search-form__form {
-  height: 72px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -17,9 +16,11 @@
 }
 
 .search-form__input-container {
+  height: 72px;
   display: flex;
   align-items: center;
   width: 100%;
+  justify-content: space-between;
 }
 
 .search-form__icon {
@@ -29,6 +30,7 @@
 .search-form__input {
   border: none;
   width: 85%;
+  margin: 0;
 }
 
 .search-form__input::placeholder {
@@ -50,7 +52,7 @@
 }
 
 .search-form__sumbit-button {
-  width: 75px;
+  width: 58px;
   height: 34px;
   border: none;
   border-radius: 48px;
@@ -60,6 +62,7 @@
   font-size: 11px;
   font-weight: 500;
   line-height: 18px;
+  margin: 0 0 0 21px;
 }
 
 @media screen and (max-width: 1023px) {
@@ -73,6 +76,48 @@
   }
 
   .search-form__sumbit-button {
-    width: 90px;
+    width: 68px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .search-form {
+    max-width: 300px;
+    padding: 80px 0 44px 0;
+  }
+
+  .search-form__form {
+    flex-direction: column;
+    border: none;
+    background: #fff;
+    box-shadow: none;
+  }
+
+  .search-form__input-container {
+    border-radius: 9px;
+    background: #fdfdfd;
+    box-shadow: 0px 3px 14px 0px rgba(0, 0, 0, 0.08);
+  }
+
+  .search-form__input {
+    width: 67%;
+    margin: 0px 0px 3px 17px;
+  }
+
+  .search-form__icon {
+    display: none;
+  }
+
+  .search-form__input::placeholder {
+    font-size: 14px;
+  }
+
+  .search__form-divider {
+    display: none;
+  }
+
+  .search-form__sumbit-button {
+    width: 59px;
+    margin: 0 19px 0 0;
   }
 }

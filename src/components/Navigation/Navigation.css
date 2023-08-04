@@ -59,9 +59,22 @@
   .navigation__account-button {
     margin: 0 7px 0 14px;
     background-image: url(../../images/burger-menu.svg);
+    background-color: transparent;
   }
 
   .navigation__link {
     visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  .navigation__account-button {
+    background-image: url(../../images/burger-menu-small.svg);
+    margin: 0 5px 0 0;
+  }
+
+  .navigation__link {
+    display: none;
   }
 }

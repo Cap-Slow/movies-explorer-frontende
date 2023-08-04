@@ -17,10 +17,10 @@ function SearchForm() {
             required
             placeholder="Фильм"
           />
+          <button className="search-form__sumbit-button" type="submit">
+            Найти
+          </button>
         </div>
-        <button className="search-form__sumbit-button" type="submit">
-          Найти
-        </button>
         <div className="search__form-divider"></div>
         <FilterCheckbox></FilterCheckbox>
       </form>

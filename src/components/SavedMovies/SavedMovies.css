@@ -7,3 +7,9 @@
     margin: 147px;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .saved-movies__blank-area {
+    margin: 122px;
+  }
+}
