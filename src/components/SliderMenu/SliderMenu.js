@@ -1,25 +1,52 @@
+import { useNavigate } from 'react-router-dom';
+
 function SliderMenu({ isOpen, onClose }) {
+  const navigate = useNavigate();
+
   return (
     <nav className={`slider-menu ${isOpen ? 'slider-menu_opened' : ''}`}>
-      <div className="slider-menu__link-container">
-        <a className="slider-menu__link" href="#">
+      <div className="slider-menu__text-button-container">
+        <button
+          onClick={() => {
+            navigate('/');
+          }}
+          className="slider-menu__text-button"
+        >
           Главная
-        </a>
-        <a
-          className="slider-menu__link slider-menu__link_type_underline"
-          href="#"
+        </button>
+        <button
+          onClick={() => {
+            navigate('/movies');
+          }}
+          className="slider-menu__text-button slider-menu__text-button_type_underline"
         >
           Фильмы
-        </a>
-        <a className="slider-menu__link" href="#">
+        </button>
+        <button
+          onClick={() => {
+            navigate('/saved-movies');
+          }}
+          className="slider-menu__text-button"
+        >
           Сохранённые фильмы
-        </a>
+        </button>
       </div>
       <div className="slider-menu__account-section">
-        <a className="slider-menu__link slider-menu__link_text_small" href="#">
+        <button
+          onClick={() => {
+            navigate('/profile');
+          }}
+          button
+          className="slider-menu__text-button slider-menu__link_text_small"
+        >
           Аккаунт
-        </a>
-        <button className="slider-menu__account-button slider-menu__button"></button>
+        </button>
+        <button
+          onClick={() => {
+            navigate('/profile');
+          }}
+          className="slider-menu__account-button slider-menu__button"
+        ></button>
       </div>
       <button
         onClick={onClose}
