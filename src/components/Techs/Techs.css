@@ -57,7 +57,7 @@
   margin: 0 auto;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1200px) {
   .techs__title {
     margin: 80px auto 22px;
   }
