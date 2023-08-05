@@ -13,6 +13,7 @@
 .about-me__text-info-container {
   display: flex;
   flex-direction: column;
+  margin: 0;
 }
 
 .about-me__name {
@@ -60,9 +61,10 @@
   height: 327px;
   border-radius: 10px;
   object-fit: cover;
+  align-self: flex-start;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1200px) {
 
   .about-me {
     padding-top: 2px;
@@ -101,7 +103,11 @@
 @media screen and (max-width: 767px) {
   .about-me__info-container {
     flex-direction: column-reverse;
-    margin: 60px 0 0 14px;
+    margin: 60px auto 14px;
+  }
+
+  .about-me__text-info-container {
+    margin: 0 auto;
   }
 
   .about-me__name {
@@ -113,6 +119,7 @@
   .about-me__photo {
     width: 292px;
     height: 352px;
+    align-self: center;
   }
 
   .about-me__profession {
@@ -127,6 +134,6 @@
   }
 
   .about-me__link {
-    margin: 41px 0 70px;
+    margin: 41px 0 56px;
   }
 }
