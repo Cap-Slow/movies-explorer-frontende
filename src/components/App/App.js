@@ -7,8 +7,19 @@ import NotFoundPage from '../NotFoundPage/NotFoundPage';
 import Register from '../Register/Register';
 import Login from '../Login/Login';
 import { Route, Routes } from 'react-router-dom';
+import { useState } from 'react';
 
 function App() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  function handleMenuOpen() {
+    setIsMenuOpen(true);
+  }
+
+  function closeMenu() {
+    setIsMenuOpen(false);
+  }
+
   return (
     <Routes>
       <Route
@@ -23,7 +34,11 @@ function App() {
         path="/movies"
         element={
           <div className="page">
-            <Movies></Movies>
+            <Movies
+              onMenuOpen={handleMenuOpen}
+              isMenuOpen={isMenuOpen}
+              closeMenu={closeMenu}
+            ></Movies>
           </div>
         }
       />
