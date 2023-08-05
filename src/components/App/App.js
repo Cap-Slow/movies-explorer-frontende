@@ -48,7 +48,11 @@ function App() {
         path="/saved-movies"
         element={
           <div className="page">
-            <SavedMovies></SavedMovies>
+            <SavedMovies
+              onMenuOpen={handleMenuOpen}
+              isMenuOpen={isMenuOpen}
+              closeMenu={closeMenu}
+            ></SavedMovies>
           </div>
         }
       />
