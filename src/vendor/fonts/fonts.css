@@ -13,11 +13,3 @@
   font-style: normal;
   font-weight: 500;
 }
-
-@font-face {
-  src: url('../fonts/inter/black/Inter-Black.woff') format('woff'),
-    url('../fonts/inter/black/Inter-Black.woff2') format('woff2');
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 900;
-}
