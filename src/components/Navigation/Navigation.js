@@ -1,13 +1,40 @@
+import { useNavigate } from 'react-router-dom';
+
 function Navigation({ onMenuOpen }) {
+  const navigate = useNavigate();
+
   return (
     <nav className="navigation__container">
-      <a className="navigation__link navigation__link_font_medium">Фильмы</a>
-      <a className="navigation__link navigation__link_font_regular navigation__link_margin_low">
+      <button
+        onClick={() => {
+          navigate('/movies');
+        }}
+        className="navigation__link-button navigation__link-button_font_medium"
+      >
+        Фильмы
+      </button>
+      <button
+        onClick={() => {
+          navigate('/saved-movies');
+        }}
+        className="navigation__link-button navigation__link-button_font_regular navigation__link-button_margin_low"
+      >
         Сохранённые фильмы
-      </a>
-      <a className="navigation__link navigation__link_font-size_regular navigation__link_margin_medium">
+      </button>
+      <button
+        onClick={() => {
+          navigate('/profile');
+        }}
+        className="navigation__link-button navigation__link-button_font-size_regular navigation__link-button_margin_medium"
+      >
         Аккаунт
-      </a>
+      </button>
+      <button
+        onClick={() => {
+          navigate('/profile');
+        }}
+        className="navigation__account-button navigation__button"
+      ></button>
       <button
         onClick={onMenuOpen}
         className="navigation__menu-button navigation__button"
