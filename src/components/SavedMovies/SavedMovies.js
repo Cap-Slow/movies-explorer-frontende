@@ -30,15 +30,14 @@ function SavedMovies() {
         >
           <button className="movies-card__delete-icon movies-card__save-element"></button>
         </MoviesCard>
-        {/* <MoviesCard
+        <MoviesCard
           title={'В погоне за Бенкси'}
           duration={'1ч 17м'}
           imageLink={thirdImagePath}
         >
           <button className="movies-card__delete-icon movies-card__save-element"></button>
-        </MoviesCard> */}
+        </MoviesCard>
       </MoviesCardList>
-      <div className="saved-movies__blank-area"></div>
       <Footer />
     </section>
   );
