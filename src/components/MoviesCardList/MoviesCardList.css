@@ -16,6 +16,7 @@
 }
 
 .movies-card-list__load-button {
+  visibility: visible;
   margin: 78px auto 51px;
   width: 320px;
   height: 36px;
@@ -25,6 +26,11 @@
   font-size: 12px;
   font-weight: 500;
   cursor: pointer;
+}
+
+.movies-card-list__load-button_display_hidden {
+  visibility: hidden;
+  margin: 125px auto 51px;
 }
 
 .movies-card-list__load-button:hover {
@@ -62,5 +68,10 @@
 
   .movies-card-list__load-button {
     width: 240px;
+  }
+
+  .movies-card-list__load-button_display_hidden {
+    visibility: hidden;
+    margin: 35px auto 51px;
   }
 }
