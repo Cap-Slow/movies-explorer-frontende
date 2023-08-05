@@ -1,6 +1,6 @@
-function SliderMenu() {
+function SliderMenu({ isOpen, onClose }) {
   return (
-    <nav className="slider-menu ">
+    <nav className={`slider-menu ${isOpen ? 'slider-menu_opened' : ''}`}>
       <div className="slider-menu__link-container">
         <a className="slider-menu__link" href="#">
           Главная
@@ -19,9 +19,12 @@ function SliderMenu() {
         <a className="slider-menu__link slider-menu__link_text_small" href="#">
           Аккаунт
         </a>
-        <button className="slider-menu__account-button"></button>
+        <button className="slider-menu__account-button slider-menu__button"></button>
       </div>
-      <button className="slider-menu__close-button"></button>
+      <button
+        onClick={onClose}
+        className="slider-menu__close-button slider-menu__button"
+      ></button>
     </nav>
   );
 }
