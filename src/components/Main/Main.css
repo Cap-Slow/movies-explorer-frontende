@@ -14,11 +14,48 @@
 }
 
 .main__section-title_section_techs {
-  padding: 96px 0 23px 0;
+  padding: 101px 0 23px 0;
 }
 
+.main__register-button {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  margin: 0;
+  visibility: visible;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
 
-@media screen and (max-width: 1023px) {
+.main__register-button:hover {
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.5s ease;
+  transition: text-shadow 0.5s ease;
+}
+
+.main__login-button {
+  width: 76px;
+  height: 32px;
+  border: none;
+  margin-left: 30px;
+  border-radius: 3px;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #000;
+}
+
+.main__button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.5s ease;
+}
+
+@media screen and (max-width: 1200px) {
   .main__section-title {
     max-width: 668px;
     padding: 90px 0 23px 0;
@@ -36,6 +73,17 @@
   .main__section-title_section_student {
     padding: 80px 0 27px 0;
     max-width: 292px;
+  }
+
+  .main__register-button {
+    font-size: 10px;
+  }
+
+  .main__login-button {
+    width: 54px;
+    height: 26px;
+    margin-left: 14px;
+    font-size: 10px;
   }
 
 }
