@@ -19,15 +19,15 @@ import eleventhImagePath from '../../images/movie-placeholders/eleventh-image.pn
 import twelfthImagePath from '../../images/movie-placeholders/twelfth-image.png';
 import Footer from '../Footer/Footer';
 
-function Movies() {
+function Movies({ onMenuOpen, isMenuOpen, closeMenu, isLoading }) {
   return (
     <section className="movies">
       <Header isLoggedIn={true}>
-        <Navigation />
-        {/* <SliderMenu /> */}
+        <Navigation onMenuOpen={onMenuOpen} />
+        <SliderMenu isOpen={isMenuOpen} onClose={closeMenu} />
       </Header>
       <SearchForm />
-      {/* <Preloader /> */}
+      {isLoading && <Preloader />}
       <MoviesCardList isMoviesPage={true}>
         <MoviesCard
           title={'33 слова о дизайне'}
@@ -96,8 +96,8 @@ function Movies() {
           <button className="movies-card__save-button movies-card__save-element">
             Сохранить
           </button>
-        </MoviesCard> */}
-        {/* <MoviesCard
+        </MoviesCard>
+        <MoviesCard
           title={'Дженис: Маленькая девочка грустит'}
           duration={'1ч 17м'}
           imageLink={ninthImagePath}
