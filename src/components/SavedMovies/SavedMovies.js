@@ -1,5 +1,6 @@
 import Header from '../Header/Header';
 import Navigation from '../Navigation/Navigation';
+import SliderMenu from '../SliderMenu/SliderMenu';
 import SearchForm from '../SearchForm/SearchForm';
 import MoviesCardList from '../MoviesCardList/MoviesCardList';
 import MoviesCard from '../MoviesCard/MoviesCard';
@@ -8,11 +9,12 @@ import firstImagePath from '../../images/movie-placeholders/33slova.png';
 import secondImagePath from '../../images/movie-placeholders/second-image.png';
 import thirdImagePath from '../../images/movie-placeholders/third-image.png';
 
-function SavedMovies() {
+function SavedMovies({ isMenuOpen, closeMenu, onMenuOpen }) {
   return (
     <section className="saved-movies">
       <Header isLoggedIn={true}>
-        <Navigation />
+        <Navigation onMenuOpen={onMenuOpen} />
+        <SliderMenu isOpen={isMenuOpen} onClose={closeMenu} />
       </Header>
       <SearchForm />
       <MoviesCardList isMoviesPage={false}>
