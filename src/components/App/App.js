@@ -11,6 +11,7 @@ import { useState } from 'react';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   function handleMenuOpen() {
     setIsMenuOpen(true);
@@ -38,6 +39,7 @@ function App() {
               onMenuOpen={handleMenuOpen}
               isMenuOpen={isMenuOpen}
               closeMenu={closeMenu}
+              isLoading={isLoading}
             ></Movies>
           </div>
         }
