@@ -72,7 +72,7 @@ function Movies({ onMenuOpen, isMenuOpen, closeMenu, isLoading }) {
             Сохранить
           </button>
         </MoviesCard>
-        {/* <MoviesCard
+        <MoviesCard
           title={'Книготорговцы'}
           duration={'1ч 17м'}
           imageLink={sixthImagePath}
@@ -132,7 +132,7 @@ function Movies({ onMenuOpen, isMenuOpen, closeMenu, isLoading }) {
           <button className="movies-card__save-button movies-card__save-element">
             Сохранить
           </button>
-        </MoviesCard> */}
+        </MoviesCard>
       </MoviesCardList>
       <Footer />
     </section>
