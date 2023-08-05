@@ -1,8 +1,11 @@
 import logoPath from '../../images/circle-logo.svg';
 import FormInput from '../FormInput/FormInput';
 import InputError from '../InputError/InputError';
+import { useNavigate } from 'react-router-dom';
 
 function AuthPage({ isLoginPage }) {
+  const navigate = useNavigate();
+
   return (
     <section className="auth-page">
       <div className="auth-page__container">
@@ -13,14 +16,14 @@ function AuthPage({ isLoginPage }) {
         <form className="auth-page__form">
           {!isLoginPage && (
             <>
-              <FormInput type="text" required labelName={'Имя'} />
+              <FormInput type={'text'} labelName={'Имя'} />
               <InputError />
             </>
           )}
-          <FormInput type="email" required labelName={'E-mail'} />
+          <FormInput type={'email'} labelName={'E-mail'} />
           <InputError />
-          <FormInput type="password" required labelName={'Пароль'} />
-          <InputError>Что-то пошло не так...</InputError>
+          <FormInput type={'password'} labelName={'Пароль'} />
+          <InputError>{isLoginPage ? '' : 'Что-то пошло не так...'}</InputError>
           <button
             className={`auth-page__submit-button ${
               isLoginPage ? 'auth-page__submit-button_margin_high' : ''
@@ -31,9 +34,15 @@ function AuthPage({ isLoginPage }) {
           </button>
           <p className="auth-page__text">
             {isLoginPage ? 'Ещё не зарегистрированы?' : 'Уже зарегистрированы?'}{' '}
-            <a className="auth-page__link" href="/signin">
+            <button
+              onClick={() => {
+                navigate(`${isLoginPage ? '/signup' : '/signin'}`);
+              }}
+              className="auth-page__redirect-button"
+              href="/signin"
+            >
               {isLoginPage ? 'Регистрация' : 'Войти'}
-            </a>
+            </button>
           </p>
         </form>
       </div>
