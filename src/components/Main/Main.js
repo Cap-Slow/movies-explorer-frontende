@@ -6,14 +6,28 @@ import Techs from '../Techs/Techs';
 import AboutMe from '../AboutMe/AboutMe';
 import Portfolio from '../Portfolio/Portfolio';
 import Footer from '../Footer/Footer';
+import { useNavigate } from 'react-router-dom';
 
 function Main() {
+  const navigate = useNavigate();
   return (
     <main className="main">
       <Header isLoggedIn={false}>
         <nav className="header__nav-container">
-          <a className="header__link">Регистрация</a>
-          <button className="header__register-button header__button">
+          <button
+            onClick={() => {
+              navigate('/signup');
+            }}
+            className="main__register-button"
+          >
+            Регистрация
+          </button>
+          <button
+            onClick={() => {
+              navigate('/signin');
+            }}
+            className="main__login-button main__button"
+          >
             Войти
           </button>
         </nav>
