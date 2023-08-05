@@ -47,7 +47,7 @@
   grid-template-rows: repeat(2, 36px);
   text-align: center;
   width: 1140px;
-  margin: 110px auto;
+  margin: 110px auto 105px;
 }
 
 .about-project__timeline-text {
@@ -74,7 +74,7 @@
   line-height: 17px;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1200px) {
   .about-project__description {
     max-width: 668px;
     padding: 71px 0 23px 0;
