@@ -20,3 +20,13 @@
 .form-input_type_error {
   color: #ff4062;
 }
+
+@media screen and (max-width: 767px) {
+  .form-input {
+    width: 89%;
+  }
+
+  .form-input__label {
+    margin-bottom: 9px;
+  }
+}
