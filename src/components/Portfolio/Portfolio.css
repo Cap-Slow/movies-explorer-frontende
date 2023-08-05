@@ -23,6 +23,8 @@
   height: 50px;
   padding-bottom: 20px;
   align-items: center;
+  text-decoration: none;
+  color: #000;
 }
 
 .portfolio__link-container:nth-of-type(2) {
@@ -38,7 +40,6 @@
   font-weight: 400;
   line-height: 50px;
   letter-spacing: -1.2px;
-  text-decoration: none;
 }
 
 .portfolio__link-button {
@@ -49,7 +50,7 @@
   border: none;
   width: 18px;
   height: 17px;
-  margin: 6px 5px 0 0;
+  margin: 6px 6px 0 0;
   padding: 0;
 }
 
@@ -59,9 +60,13 @@
   transition: opacity 0.5s ease;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1200px) {
   .portfolio {
     max-width: 668px;
+  }
+
+  .portfolio__link-button {
+    margin: 5px 5px 0 0;
   }
 
   .portfolio__link-text {
@@ -106,6 +111,6 @@
 
   .portfolio__link-button {
     background-image: url(../../images/arrow-small.svg);
-    margin: 4px 0 0 0;
+    margin: 4px 1px 0 0;
   }
 }
