@@ -4,8 +4,8 @@ import { useState } from 'react';
 
 function Profile() {
   const [isEditableForm, setIsEditableForm] = useState(false);
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
+  const [name, setName] = useState('Дмитрий');
+  const [email, setEmail] = useState('pochta@yandex.ru');
   const [isProfileUpdateError, setIsProfileUpdateError] = useState(false);
 
   function editForm() {
