@@ -1,8 +1,8 @@
-function FormInput({ labelName }) {
+function FormInput({ labelName, type }) {
   return (
     <>
       <label className="form-input__label">{labelName}</label>
-      <input className="form-input" />
+      <input required type={type} className="form-input" />
     </>
   );
 }
